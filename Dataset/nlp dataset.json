@@ -1,0 +1,93 @@
+{
+  "categories": [
+    {
+      "type": "Siyaset - Politika",
+      "input": [
+        "Sakin bir akşam, iç dünyamın derinliklerinde kaybolmak gibisi yok.",
+        "Yalnızlık, kafamdaki sesleri dinlemem için bana en iyi alanı sağlar."
+      ],
+      "output": "Bu cümle 'Siyaset - Politika' kategorisine aittir."
+    },
+    {
+      "type": "Dünya",
+      "input": [
+        "Kalabalık bir etkinlikte olmak, ruhumu besleyen bir enerji kaynağıdır.",
+        "Herkesle sohbet etmek, bana yeni bakış açıları kazandırır."
+      ],
+      "output": "Bu cümle 'Dünya' kategorisine aittir."
+    },
+    {
+      "type": "Ekonomi",
+      "input": [
+        "Gerçeklik, benim için somut ve dokunulabilirdir.",
+        "Detaylarda kaybolmak, benim en sevdiğim yerdir."
+      ],
+      "output": "Bu cümle 'Ekonomi' kategorisine aittir."
+    },
+    {
+      "type": "Kültür",
+      "input": [
+        "Geleceği hayal etmek, benim en büyük tutkularımdan biri.",
+        "Soyut kavramlar, benim için keşfedilmeyi bekleyen hazinelerdir.",
+        "Örüntüler aramak, yaşamın gizemlerini çözmek için eğlenceli bir yolculuktur."
+      ],
+      "output": "Bu cümle 'Kültür' kategorisine aittir."
+    },
+    {
+      "type": "Sağlık",
+      "input": [
+        "Kararlarımı mantık ve objektif kriterlere dayalı olarak alırım.",
+        "Analitik düşünmek, her zaman en doğru sonuca ulaşmamı sağlar."
+      ],
+      "output": "Bu cümle 'Sağlık' kategorisine aittir."
+    },
+    {
+      "type": "Spor",
+      "input": [
+        "Duygusal bağlarım, benim en değerli hazinelerimdir.",
+        "Kararlarımı alırken, her zaman kalbimin sesini dinlerim."
+      ],
+      "output": "Bu cümle 'Spor' kategorisine aittir."
+    },
+    {
+      "type": "Teknoloji",
+      "input": [
+        "Düzen ve planlama, hayatımda önemli bir yer tutar.",
+        "Kararlılık, hedeflerime ulaşmamı sağlayan anahtardır."
+      ],
+      "output": "Bu cümle 'Teknoloji' kategorisine aittir."
+    },
+    {
+      "type": "Ürün Yorumu",
+      "input": [
+        "Esnek olmak, hayatta karşılaştığım her zorluğun üstesinden gelmemi sağlar.",
+        "Değişime açık olmak, hayatımı zenginleştiren bir deneyimdir."
+      ],
+      "output": "Bu cümle 'Ürün Yorumu' kategorisine aittir."
+    },
+    {
+      "type": "Dizi-Film",
+      "input": [
+        "Bugün hava çok güzel.",
+        "Yolda ilerlerken hoş bir melodi kulaklarımda çınlıyor."
+      ],
+      "output": "Bu cümle 'Dizi-Film' kategorisine aittir."
+    },
+    {
+      "type": "Şikayet-Müşteri Geri Bildirim",
+      "input": [
+        "Bugün hava çok güzel.",
+        "Yolda ilerlerken hoş bir melodi kulaklarımda çınlıyor."
+      ],
+      "output": "Bu cümle 'Şikayet-Müşteri Geri Bildirim' kategorisine aittir."
+    },
+    {
+      "type": "Spam e-mail",
+      "input": [
+        "Bugün hava çok güzel.",
+        "Yolda ilerlerken hoş bir melodi kulaklarımda çınlıyor."
+      ],
+      "output": "Bu cümle 'Spam e-mail' kategorisine aittir."
+    }
+  ]
+}
