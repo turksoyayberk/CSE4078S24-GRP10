@@ -2,7 +2,7 @@
 
 ## Text Classification / Categorization
 
-## dataset.json ---> Dizi/Film - Ekonomi - Dünya - Sağlık - Teknoloji - Şikayet - Müşteri Geri Bildirim - Magazin
+## dataset.json ---> Dizi/Film - Ekonomi - Dünya - Sağlık - Teknoloji - Şikayet/Müşteri Geri Bildirim - Magazin
 ## dataset2.json ---> Kültür - Spor - Ürün Yorumu
 
 ## NLP Dataset Categories 
