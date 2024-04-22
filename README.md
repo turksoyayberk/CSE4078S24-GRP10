@@ -20,5 +20,5 @@
 ### Yağmur Koçoğlu ---> Kültür - Dizi/Film
 ### Abdullah Enes Dizer ---> Ekonomi - Dünya
 ### Mert Efe Karaköse ---> Spor - Ürün Yorumu
-### Ayberk Türksoy ---> Sağlık - Teknoloji
+### Ayberk Türksoy ---> Sağlık - Teknoloji - Kitap
 ### Musa Meriç ---> Şikayet/Müşteri Geri Bildirim - Magazin
