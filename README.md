@@ -13,6 +13,7 @@
 #### dataset9.json ---> Spor - Mert
 #### dataset10.json ---> Ürün Yorumu - Mert
 #### dataset11.json ---> Ürün Yorumu - Mert
+#### dataset12.json ---> Kitap - Ayberk
 
 
 ## NLP Dataset Categories 
