@@ -2,8 +2,18 @@
 
 ## Text Classification / Categorization
 
-## dataset.json ---> Dizi/Film - Ekonomi - Dünya - Sağlık - Teknoloji - Şikayet/Müşteri Geri Bildirim - Magazin
-## dataset2.json ---> Kültür - Spor - Ürün Yorumu
+## dataset1.json ---> Dizi/Film - Yağmur
+## dataset2.json ---> Kültür - Yağmur
+## dataset3.json ---> Sağlık - Ayberk
+## dataset4.json ---> Teknoloji - Ayberk
+## dataset5.json ---> Ekonomi - Enes
+## dataset6.json ---> Dünya - Enes
+## dataset7.json ---> Şikayet/Müşteri Geri Bildirim - Musa
+## dataset8.json ---> Magazin - Musa
+## dataset9.json ---> Spor - Mert
+## dataset10.json ---> Ürün Yorumu - Mert
+## dataset11.json ---> Ürün Yorumu - Mert
+
 
 ## NLP Dataset Categories 
 ### Yağmur Koçoğlu ---> Kültür - Dizi/Film
