@@ -1,0 +1,55 @@
+import pandas as pd
+from sklearn.metrics import precision_recall_fscore_support
+
+# Function to calculate n-grams
+def ngrams(tokens, n):
+    return [tuple(tokens[i:i+n]) for i in range(len(tokens)-n+1)]
+
+# Function to calculate ROUGE metrics
+def calculate_rouge_scores(hypothesis, reference):
+    hyp_tokens = hypothesis.split()
+    ref_tokens = reference.split()
+
+    # Get unigrams and bigrams
+    hyp_unigrams = set(ngrams(hyp_tokens, 1))
+    ref_unigrams = set(ngrams(ref_tokens, 1))
+    hyp_bigrams = set(ngrams(hyp_tokens, 2))
+    ref_bigrams = set(ngrams(ref_tokens, 2))
+
+    # Calculate ROUGE-1 (unigrams)
+    rouge1_recall = len(hyp_unigrams & ref_unigrams) / len(ref_unigrams) if len(ref_unigrams) > 0 else 0
+
+    # Calculate ROUGE-2 (bigrams)
+    rouge2_recall = len(hyp_bigrams & ref_bigrams) / len(ref_bigrams) if len(ref_bigrams) > 0 else 0
+
+    # Calculate ROUGE-L (longest common subsequence)
+    def lcs(a, b):
+        lengths = [[0] * (len(b) + 1) for _ in range(len(a) + 1)]
+        for i, x in enumerate(a):
+            for j, y in enumerate(b):
+                if x == y:
+                    lengths[i+1][j+1] = lengths[i][j] + 1
+                else:
+                    lengths[i+1][j+1] = max(lengths[i+1][j], lengths[i][j+1])
+        return lengths[len(a)][len(b)]
+
+    lcs_length = lcs(hyp_tokens, ref_tokens)
+    rougeL_recall = lcs_length / len(ref_tokens) if len(ref_tokens) > 0 else 0
+
+    return rouge1_recall, rouge2_recall, rougeL_recall
+
+# Load the Excel file
+file_path = 'Mert_64_128.xlsx'
+data = pd.read_excel(file_path)
+
+# Strip any leading/trailing whitespace characters from the text
+data['Fine-Tuned Model Output'] = data['Fine-Tuned Model Output'].str.strip()
+
+# Apply the function to all rows and unpack results into separate columns
+data['ROUGE-1 Recall'], data['ROUGE-2 Recall'], data['ROUGE-L Recall'] = zip(*data.apply(lambda row: calculate_rouge_scores(row['Fine-Tuned Model Output'], row['Output']), axis=1))
+
+# Save the updated DataFrame back to Excel
+output_path = 'Mert_64_128yeni.xlsx'
+data.to_excel(output_path, index=False)
+
+print("Updated Excel file saved to", output_path)
